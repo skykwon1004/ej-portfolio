@@ -325,6 +325,7 @@ h2 span {
 .test-item {
   position: relative;
 }
+
 .test-item::after {
   content: "";
   border: 4px solid #d2d2d2;
