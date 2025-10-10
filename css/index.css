@@ -125,19 +125,19 @@ table {
 }
 
 /* css 시작 */
-html,
+/* html,
 body,
 * {
   font-family: "Pretendard", sans-serif !important;
-}
+} */
 
 body {
   overflow-x: hidden;
 }
 
-h2 span {
+/* h2 span {
   font-family: "Red Hat Display", sans-serif !important;
-}
+} */
 
 [class*="text-"] {
   line-height: 1.6 !important;
@@ -146,6 +146,13 @@ h2 span {
 
 .out {
   outline: 1px solid red;
+}
+
+html,
+body,
+* {
+  /* 영어 → Red Hat Display 우선 적용 / 한글 → Pretendard 자동 fallback */
+  font-family: "Red Hat Display", "Pretendard", sans-serif !important;
 }
 
 /* 변수 */
@@ -272,8 +279,8 @@ h2 span {
 
 .intro-text {
   font-family: "Red Hat Display", sans-serif !important;
-  font-weight: 800;
-  line-height: 1.2;
+  font-weight: 900;
+  line-height: 1;
 }
 
 /* nav */
@@ -328,11 +335,22 @@ h2 span {
   width: 100px;
 }
 
-.test-item {
+.mo-item,
+.pc-item {
   position: relative;
 }
+.pc-item::after {
+  content: "";
+  border: 5px solid #d2d2d2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
 
-.test-item::after {
+.mo-item::after {
   content: "";
   border: 4px solid #d2d2d2;
   position: absolute;
@@ -374,4 +392,22 @@ h2 span {
 .card.active {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* projects pro01 */
+.pro-info {
+  position: relative;
+  padding: 0 0 0 30px;
+}
+.pro-info::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%,-50%);
+  width: 20px;
+  height: 1px;
+  background: var(--gray-300);
+  opacity: 0.5;
 }
