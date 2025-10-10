@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>권은진 포트폴리오</title>
     <link rel="stylesheet" href="/css/index.css" />
+
+    <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body class="min-h-screen bg-white w-full">
     <div class="min-h-screen bg-white flex">
@@ -101,46 +109,38 @@
       <div class="flex-1 px-12 pt-24">
         <!-- Projects 섹션 -->
         <!-- 프로젝트 이름, 기여도 -->
-        <section class="pb-20">
+        <section class="pb-20" data-aos="fade-up" data-aos-duration="1400">
           <div class="flex justify-start items-start gap-12">
             <div class="self-stretch flex flex-col justify-start items-start flex-1">
-              <h3 class="text-4xl font-bold mb-8">MBTCs</h3>
+              <h3 class="text-7xl font-bold mb-8">MBTCs.</h3>
 
-              <div class="flex flex-col gap-2.5 mb-12">
-                <div class="self-stretch inline-flex justify-start gap-40">
-                  <div class="flex flex-col gap-2.5">
-                    <div class="self-stretch inline-flex justify-start items-center gap-7">
-                      <div class="justify-center text-base font-gray-300 min-w-[60px]">기업</div>
-                      <div class="justify-center text-base font-light">MBTCs</div>
-                    </div>
-                    <div class="self-stretch inline-flex justify-start items-center gap-7">
-                      <div class="justify-center text-base font-gray-300 min-w-[60px]">작업 기간</div>
-                      <div class="justify-center text-base font-light">2024.08 (3주)</div>
-                    </div>
-                    <!-- <div class="self-stretch inline-flex justify-start items-center gap-7">
-                      <div class="justify-center text-base font-gray-300 min-w-[60px]">참여 인원</div>
-                      <div class="justify-center text-base font-light">기획자 1명, 디자인 & 개발자 1명</div>
-                    </div> -->
+              <!-- <img src="/img/ttt.png" alt=""> -->
+
+              <div class="flex flex-col gap-2.5 mb-20 w-full">
+                <div class="self-stretch inline-flex justify-between">
+                  <div class="flex flex-col flex-1 self-stretch inline-flex justify-start gap-2.5">
+                    <div class="justify-center font-gray-300 font-light pro-info">기업</div>
+                    <div class="justify-center text-lg font-light">MBTCs</div>
                   </div>
 
-                  <div class="flex flex-col gap-2.5">
-                    <div class="self-stretch inline-flex justify-start items-center gap-7">
-                      <div class="justify-center text-base font-gray-300 min-w-[60px]">기여도</div>
-                      <div class="justify-center text-base font-light">웹디자인 & 퍼블리싱 100%</div>
-                    </div>
-                    <div class="self-stretch inline-flex justify-start items-center gap-7">
-                      <div class="justify-center text-base font-gray-300 min-w-[60px]">기술/툴</div>
-                      <div class="justify-center text-base font-light">디자인 Photoshop, 퍼블리싱 React</div>
-                    </div>
-                    <!-- <div class="self-stretch inline-flex justify-start items-center gap-7">
-                      <div class="justify-center text-base font-gray-300 min-w-[60px]">작업 내용</div>
-                      <div class="justify-center text-base font-light">반응형 이벤트 페이지 퍼블리싱</div>
-                    </div> -->
+                  <div class="flex flex-col flex-1 self-stretch inline-flex justify-start gap-2.5">
+                    <div class="justify-center font-gray-300 font-light pro-info">작업 기간</div>
+                    <div class="justify-center text-lg font-light">2024.08 (3주)</div>
+                  </div>
+
+                  <div class="flex flex-col flex-1 self-stretch inline-flex justify-start gap-2.5">
+                    <div class="justify-center font-gray-300 font-light pro-info">기여도</div>
+                    <div class="justify-center text-lg font-light">웹디자인, 퍼블리싱 100%</div>
+                  </div>
+
+                  <div class="flex flex-col flex-1 self-stretch inline-flex justify-start gap-2.5">
+                    <div class="justify-center font-gray-300 font-light pro-info">기술</div>
+                    <div class="justify-center text-lg font-light">Photoshop, React</div>
                   </div>
                 </div>
               </div>
 
-              <a href="https://mbtcsuper.com/" target="_blank" class="inline-flex items-center gap-3 px-8 py-3 rounded-lg border-black group">
+              <a href="https://petcarelab.net/" target="_blank" class="inline-flex items-center gap-3 px-8 py-3 rounded-lg border-black group">
                 <span>Live Website</span>
                 <svg class="w-3 h-3 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 12 10" fill="none">
                   <path d="M7 1l4 4-4 4M1 5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -151,33 +151,101 @@
         </section>
 
         <!-- Overview -->
-        <section class="pb-20 border-b-gray-100">
-          <div class="self-stretch inline-flex flex-col justify-start items-start gap-8 w-full">
-            <!-- 컨텐츠 -->
-            <div class="pro-bg-title shadow-[10px_10px_10px_0px_rgba(198,198,198,0.50)]">
-              <div class="bg-white py-20 px-12 pro-bg-con rounded-2xl">
+        <section class="pb-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <div class="inline-flex flex-col gap-8 w-full">
+            <div class="w-full h-[750px] bg-[url('/img/pro02-title-bg.png')] bg-no-repeat bg-center bg-cover relative shadow-[10px_10px_10px_0px_rgba(198,198,198,0.50)] rounded-2xl">
+              <div class="bg-white p-14 pro-bg-con rounded-2xl">
                 <div class="flex gap-5">
-                  <div class="text-4xl font-bold mb-12">Project Overview</div>
-                  <div class="w-8">
-                    <img src="/img/pro01-title-item.png" alt="" />
-                  </div>
+                  <div class="text-4xl font-bold mb-10">Project Overview</div>
+                  <div class="w-12"><img src="/img/pro02-title-item.png" alt="" /></div>
                 </div>
 
                 <div class="text-lg font-gray-300 font-light">
-                  반려동물과 보호자의 일상 속 건강 관리를 더 쉽고 친근하게 만들어주는 스마트 펫케어 브랜드를 위해 제작된 프로모션 웹사이트입니다.
+                  MBTCs는
+                  <span class="font-bold">친환경 블록체인 기반의 메타버스 생태계</span>
+                  를 소개하기 위한
+                  <span class="font-bold">프로모션 웹사이트입니다.</span>
                   <br />
-                  AI 기술을 활용한 스마트 배변판의 기능을 명확하고 직관적으로 설명하면서도, 반려동물이 주는 따뜻함과 귀여운 감성을 살린 디자인으로 사용자와 브랜드를 자연스럽게 연결했습니다.
                   <br />
-                  화이트 베이스에 소프트한 포인트 컬러와 둥근 카드 UI를 적용해 신뢰감과 청결한 브랜드 이미지를 동시에 전달했습니다.
+                  복잡한 기술적 개념을 시각적으로 명확하게 전달하고, 투자자와 사용자에게
+                  <span class="font-bold">브랜드의 비전과 신뢰감</span>
+                  을 동시에 주는 것을 목표로 했습니다.
+                  <br />
+                  <br />
+                  메인 비주얼은 ‘Eco-friendly Blockchain Metaverse’ 메시지를 중심으로
+                  <span class="font-bold">3D 그래픽과 네온 라이트 효과</span>
+                  를 활용하여
+                  <span class="font-bold">미래지향적이고 기술적인 브랜드 이미지</span>
+                  를 구현했습니다.
+                  <br />
+                  <br />
+                  또한
+                  <span class="font-bold">다크 모드 기반의 레이아웃과 그린 포인트 컬러</span>
+                  를 사용해 친환경 에너지와 디지털 혁신이라는 브랜드 아이덴티티를 시각적으로 표현했습니다.
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        <!-- Design Goal -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-2.5">
+              <div class="text-4xl font-bold">Design Goal</div>
+              <div class="text-lg font-gray-300">
+                사용자 중심의 정보 전달과 기술적 신뢰감의 균형을 목표로,
+                <br />
+                브랜드 비전과 프로젝트의 기술적 메시지를 직관적으로 보여주는 디자인을 구현했습니다.
+              </div>
+            </div>
+
+            <div class="bg-[#0B1220] text-white grid grid-cols-1 md:grid-cols-5 gap-16 text-center py-24 px-16 rounded-2xl">
+              <div class="flex flex-col items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#1B2338] text-[#00FF9C] text-2xl">💡</div>
+                <h3 class="text-xl font-semibold">Clarity</h3>
+                <p class="font-gray-500 text-sm text-[#A3A3A3]">
+                  복잡한 기능을 시각적으로 명확하게 정리해 정보 전달력을 높였습니다.
+                </p>
+              </div>
+            
+              <div class="flex flex-col items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#1B2338] text-[#00FF9C] text-2xl">🎨</div>
+                <h3 class="text-xl font-semibold">Consistency</h3>
+                <p class="font-gray-500 text-sm text-[#A3A3A3]">
+                  브랜드 톤에 맞는 컬러와 UI 요소를 일관성 있게 유지했습니다.
+                </p>
+              </div>
+            
+              <div class="flex flex-col items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#1B2338] text-[#00FF9C] text-2xl">🧭</div>
+                <h3 class="text-xl font-semibold">Usability</h3>
+                <p class="font-gray-500 text-sm text-[#A3A3A3]">
+                  사용자가 자연스럽게 탐색할 수 있는 흐름으로 인터페이스를 설계했습니다.
+                </p>
+              </div>
+            
+              <div class="flex flex-col items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#1B2338] text-[#00FF9C] text-2xl">🚀</div>
+                <h3 class="text-xl font-semibold">Innovation</h3>
+                <p class="font-gray-500 text-sm text-[#A3A3A3]">
+                  미래지향적이고 기술적인 브랜드 이미지를 시각적으로 표현했습니다.
+                </p>
+              </div>
+            
+              <div class="flex flex-col items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#1B2338] text-[#00FF9C] text-2xl">⚙️</div>
+                <h3 class="text-xl font-semibold">Efficiency</h3>
+                <p class="font-gray-500 text-sm text-[#A3A3A3]">
+                  퍼블리싱 효율을 고려한 컴포넌트 구조로 유지보수가 용이합니다.
+                </p>
+              </div>
+            </div>
+        </section>
+
         <!-- 컨셉 -->
-        <section class="py-20 border-b-gray-100">
-          <div class="flex flex-col self-stretch inline-flex justify-start items-start gap-6">
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <div class="flex flex-col self-stretch inline-flex justify-start items-start gap-10">
             <div class="justify-center text-4xl font-bold">Concept</div>
             <div class="self-stretch inline-flex justify-start items-start gap-6 flex-1">
               <div class="self-stretch flex flex-col flex-1 justify-start items-start gap-8 bg-white rounded-2xl shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] border-gray-100 py-10 px-8">
@@ -217,7 +285,7 @@
         </section>
 
         <!-- design system -->
-        <section class="py-20 border-b-gray-100 self-stretch flex flex-col justify-start items-start gap-6">
+        <section class="py-20 border-b-gray-100 self-stretch flex flex-col justify-start items-start gap-10" data-aos="fade-up" data-aos-duration="1400">
           <div class="flex flex-col gap-2.5">
             <div class="justify-center text-4xl font-bold">Design System</div>
             <div class="text-lg font-gray-300">
@@ -228,37 +296,34 @@
           </div>
 
           <!-- Typography -->
-          <div class="self-stretch inline-flex flex-col justify-start items-start gap-20 w-full bg-[#F8F8F8] py-20 px-16">
+          <div class="self-stretch inline-flex flex-col justify-start items-start gap-20 w-full bg-[#F8F8F8] py-24 px-16">
             <div class="flex self-stretch inline-flex justify-start items-stretch gap-6">
               <div class="flex flex-col flex-1 gap-6">
                 <div class="text-xl font-semibold">Typography</div>
-                <div class="flex-1 pt-12 px-10 pb-7 bg-gray-100 flex flex-col justify-center items-center gap-12 w-full bg-white rounded-2xl border-gray-100">
+                <div class="flex-1 pt-12 px-10 pb-7 bg-gray-100 flex flex-col justify-center items-center gap-14 w-full bg-white rounded-2xl border-gray-100">
                   <div class="self-stretch flex flex-col justify-center items-start">
-                    <div class="inline-flex justify-start items-start gap-4">
-                      <div class="justify-start text-lg font-semibold">Noto Sans KR</div>
-                      <div class="justify-start text-base font-gray-300">KOR</div>
-                    </div>
+                    <div class="font-light font-gray-300 text-sm !font-['Pretendard']">한글</div>
+                    <div class="justify-start text-lg font-semibold !font-['Pretendard']">Noto Sans KR</div>
                     <div class="self-stretch inline-flex justify-between items-center">
                       <div class="flex-1 justify-start">
                         <span class="text-5xl font-normal !font-['Noto_Sans_KR']">가</span>
                         <span class="text-5xl font-medium !font-['Noto_Sans_KR']">나</span>
                         <span class="text-5xl font-bold !font-['Noto_Sans_KR']">다</span>
                       </div>
-                      <div class="justify-start text-base font-normal">Regular | Medium | Bold</div>
+                      <div class="justify-start font-normal">Regular | Medium | Bold</div>
                     </div>
                   </div>
                   <div class="self-stretch flex flex-col justify-center items-start">
-                    <div class="self-stretch inline-flex justify-start items-start gap-4">
-                      <div class="justify-start text-lg font-semibold">Roboto</div>
-                      <div class="w-8 self-stretch justify-start text-base font-gray-300">ENG</div>
-                    </div>
+                    <div class="font-light font-gray-300 text-sm !font-['Pretendard']">영어</div>
+                    <div class="justify-start text-lg font-semibold !font-['Pretendard']">Roboto</div>
+
                     <div class="self-stretch inline-flex justify-between items-center">
                       <div class="justify-start">
                         <span class="text-5xl font-normal !font-['Roboto']">A</span>
                         <span class="text-5xl font-medium !font-['Roboto']">B</span>
                         <span class="text-5xl font-bold !font-['Roboto']">C</span>
                       </div>
-                      <div class="justify-start text-base font-normal">Regular | Medium | Bold</div>
+                      <div class="justify-start font-normal">Regular | Medium | Bold</div>
                     </div>
                   </div>
                 </div>
@@ -267,15 +332,24 @@
               <!-- color -->
               <div class="flex flex-col flex-1 gap-6">
                 <div class="text-xl font-semibold">Color</div>
-                <div class="flex-1 flex flex-col w-full">
-                  <div class="self-stretch flex-1 py-10 bg-[#AC927F] inline-flex justify-center items-center gap-2.5 rounded-tl-2xl rounded-tr-2xl">
-                    <div class="text-white justify-start text-xl font-medium">#AC927F</div>
+                <div class="flex-1 flex gap-2.5 w-full">
+                  <div class="self-stretch flex-1 py-10 bg-[#876E5C] inline-flex justify-center items-end gap-2.5 rounded-2xl">
+                    <div class="flex flex-col gap-2">
+                      <div class="text-white text-sm font-thin">Main Color</div>
+                      <div class="text-white justify-start text-xl font-medium">#876E5C</div>
+                    </div>
                   </div>
-                  <div class="self-stretch flex-1 py-10 bg-[#876E5C] inline-flex justify-center items-center gap-2.5">
-                    <div class="text-white justify-start text-xl font-medium">#876E5C</div>
+                  <div class="self-stretch flex-1 py-10 bg-[#AC927F] inline-flex justify-center items-end gap-2.5 rounded-2xl">
+                    <div class="flex flex-col gap-2">
+                      <div class="text-white text-sm font-thin">Sub Color</div>
+                      <div class="text-white justify-start text-xl font-medium">#AC927F</div>
+                    </div>
                   </div>
-                  <div class="self-stretch flex-1 py-10 bg-[#554F4B] inline-flex justify-center items-center gap-2.5 rounded-bl-2xl rounded-br-2xl">
-                    <div class="text-white justify-start text-xl font-medium">#554F4B</div>
+                  <div class="self-stretch flex-1 py-10 bg-[#554F4B] inline-flex justify-center items-end gap-2.5 rounded-2xl">
+                    <div class="flex flex-col gap-2">
+                      <div class="text-white text-sm font-thin">Sub Color</div>
+                      <div class="text-white justify-start text-xl font-medium">#554F4B</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -289,13 +363,13 @@
                   <div class="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
                     <div class="justify-start text-font-tertiary text-sm font-semibold tracking-wide font-gray-500">Default</div>
                     <div class="px-5 py-2 bg-[#876E5C] rounded-[20px] inline-flex justify-center items-center gap-2.5">
-                      <div class="text-center justify-start text-white text-base font-normal">BUTTON</div>
+                      <div class="text-center justify-start text-white font-normal !font-['Roboto']">BUTTON</div>
                     </div>
                   </div>
                   <div class="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
                     <div class="justify-start text-font-tertiary text-sm font-semibold tracking-wide font-gray-500">Hover</div>
                     <div class="px-5 py-2 bg-[#AC927F] rounded-[20px] shadow-[5px_5px_8px_0px_rgba(0,0,0,0.15)] inline-flex justify-center items-center gap-2.5">
-                      <div class="text-center justify-start text-white text-base font-normal">BUTTON</div>
+                      <div class="text-center justify-start text-white font-normal !font-['Roboto']">BUTTON</div>
                     </div>
                   </div>
                 </div>
@@ -303,13 +377,13 @@
                   <div class="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
                     <div class="justify-start text-white text-sm font-semibold tracking-wide">Default</div>
                     <div class="px-5 py-2 bg-white rounded-[20px] inline-flex justify-center items-center gap-2.5">
-                      <div class="text-center justify-start text-neutral-800 text-base font-normal">BUTTON</div>
+                      <div class="text-center justify-start text-neutral-800 font-normal !font-['Roboto']">BUTTON</div>
                     </div>
                   </div>
                   <div class="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
                     <div class="justify-start text-white text-sm font-semibold tracking-wide">Hover</div>
                     <div class="px-5 py-2 bg-[#FBF7EC] rounded-[20px] shadow-[0px_0px_20px_0px_rgba(251,247,236,0.50)] inline-flex justify-center items-center gap-2.5">
-                      <div class="text-center justify-start text-[#5F4736] text-base font-bold">BUTTON</div>
+                      <div class="text-center justify-start text-[#5F4736] font-bold !font-['Roboto']">BUTTON</div>
                     </div>
                   </div>
                 </div>
@@ -339,13 +413,13 @@
                 <div class="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
                   <div class="justify-start text-font-tertiary text-sm font-semibold font-['Pretendard'] leading-none tracking-wide font-gray-500">Default</div>
                   <div class="w-full p-5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-neutral-300 inline-flex justify-start items-center gap-2.5">
-                    <div class="text-center justify-start text-neutral-300 text-[18px] font-normal !font-['Noto_Sans_KR'] leading-relaxed">이름</div>
+                    <div class="text-center justify-start text-neutral-300 text-[18px] font-normal !font-gray-500ans_KRsm">이름</div>
                   </div>
                 </div>
                 <div class="flex-1 inline-flex flex-col justify-start items-center gap-2.5">
                   <div class="justify-start text-font-tertiary text-sm font-semibold font-['Pretendard'] leading-none tracking-wide font-gray-500">focus</div>
                   <div class="w-full p-5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-stone-400 inline-flex justify-start items-center gap-2.5">
-                    <div class="text-center justify-start text-neutral-300 text-[18px] font-normal !font-['Noto_Sans_KR'] leading-relaxed">이름</div>
+                    <div class="text-center justify-start text-neutral-300 text-[18px] font-normal !font-gray-500ans_KRsm">이름</div>
                   </div>
                 </div>
               </div>
@@ -353,29 +427,9 @@
           </div>
         </section>
 
-        <!-- web page -->
-        <!-- <section class="py-20 border-b-gray-100">
-          <div class="self-stretch inline-flex flex-col justify-start items-start gap-6">
-            <div class="justify-center text-4xl font-bold">PC Design</div>
-
-            <div class="self-stretch inline-flex flex-col justify-start items-start gap-10 w-full bg-[#F8F8F8] py-20 px-16">
-              <div class="text-lg font-gray-300">
-                AI 기반 반려동물 헬스케어 브랜드의 전문성과 신뢰를 전달하기 위해, 제품 중심의 메인 비주얼과 직관적인 서비스·제품 소개 흐름을 설계했습니다.
-                <br />
-                감성적 공감을 주는 반려동물 이미지와 따뜻한 톤의 UI/UX로 브랜드 가치를 쉽게 이해하도록 디자인했습니다.
-              </div>
-
-              <div class="">
-                <div class="rounded-2xl flex-1 shadow-[10px_10px_10px_0px_rgba(198,198,198,0.50)] border-white-5px">
-                  <img src="img/pro01-02.jpg" alt="" class="rounded-2xl" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-
-        <section class="py-20 border-b-gray-100">
-          <div class="self-stretch inline-flex flex-col justify-start items-start gap-6">
+        <!-- pc -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <div class="self-stretch inline-flex flex-col justify-start items-start gap-10">
             <div class="flex flex-col gap-2.5">
               <div class="justify-center text-4xl font-bold">PC Design</div>
               <div class="text-lg font-gray-300">
@@ -385,18 +439,22 @@
               </div>
             </div>
 
-            <div class="self-stretch inline-flex flex-col justify-start items-start gap-10 w-full bg-[#F8F8F8] py-20 px-16">
-              <div class="">
-                <div class="rounded-2xl flex-1 shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] border-d2-5px">
-                  <img src="/img/pro01-02.jpg" alt="" class="rounded-2xl" />
+            <div class="self-stretch inline-flex flex-col justify-start items-start gap-10 w-full bg-[#F8F8F8] py-24 px-16">
+              <div class="shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)]">
+                <div class="rounded-2xl flex-1 pc-item">
+                  <img src="/img/pro01-01.png" alt="" class="rounded-tl-2xl rounded-tr-2xl" />
+                </div>
+                <div class="">
+                  <img src="/img/pro01-02.png" alt="" class="rounded-bl-2xl rounded-br-2xl" />
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="py-20 border-b-gray-100">
-          <div class="self-stretch inline-flex flex-col justify-start items-start gap-6">
+        <!-- mo -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <div class="self-stretch inline-flex flex-col justify-start items-start gap-10">
             <div class="flex flex-col gap-2.5">
               <div class="justify-center text-4xl font-bold">Mobile Design</div>
               <div class="text-lg font-gray-300">
@@ -406,9 +464,9 @@
               </div>
             </div>
 
-            <div class="flex gap-10 justify-start items-start gap-10 w-full bg-[#F8F8F8] py-20 px-16">
-              <div class="test shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)]">
-                <div class="rounded-2xl flex-1 test-item">
+            <div class="flex gap-10 justify-start items-start gap-6 w-full bg-[#F8F8F8] py-24 px-16">
+              <div class="shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)]">
+                <div class="rounded-2xl flex-1 mo-item">
                   <img src="/img/pro01-mo01.png" alt="" class="rounded-tl-2xl rounded-tr-2xl" />
                 </div>
                 <div class="">
@@ -439,3 +497,7 @@
     </div>
   </body>
 </html>
+
+<script>
+  AOS.init();
+</script>
