@@ -208,11 +208,12 @@
 
               <div class="px-2 py-5">
                 <p class="font-gray-300 text-sm font-light mb-2">Web Design</p>
-                <h4 class="text-lg font-medium">Aiveo - Website for AI SAAS Startup</h4>
+                <h4 class="text-lg font-medium mb-1">MBTCs</h4>
+                <div class="text-base font-light">MBTCs 브랜드를 위해 제작된 프로모션 웹사이트</div>
               </div>
             </a>
 
-            <a href="test.html" class="bg-white overflow-hidden group">
+            <a href="projects/web/pro03.html" class="bg-white overflow-hidden group">
               <div class="aspect-square overflow-hidden rounded-2xl">
                 <img src="img/sample01.avif" alt="" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
               </div>
@@ -447,6 +448,18 @@
         <footer class="p-12">
           <p class="font-gray-300 font-light">© 2025 All rights reserved.</p>
         </footer>
+
+        <!-- Scroll to Top Button -->
+        <button
+          id="scrollTopBtn"
+          class="fixed bottom-10 right-10 hidden bg-black text-white w-12 h-12 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 flex items-center justify-center"
+          aria-label="Scroll to top"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+        
       </div>
     </div>
   </body>
@@ -469,4 +482,26 @@
 
 <script>
   AOS.init();
+</script>
+
+<!-- Scroll to Top Button -->
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      scrollBtn.classList.remove("hidden");
+      scrollBtn.classList.add("flex");
+    } else {
+      scrollBtn.classList.add("hidden");
+      scrollBtn.classList.remove("flex");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 </script>

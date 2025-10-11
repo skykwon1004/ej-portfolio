@@ -101,9 +101,9 @@ nav,
 section {
   display: block;
 }
-body {
+/* body {
   line-height: 1;
-}
+} */
 ol,
 ul {
   list-style: none;
@@ -218,6 +218,10 @@ body,
   opacity: 1;
 }
 
+.border-dark {
+  border: 1px solid #131e32;
+}
+
 .border-gray-300-das {
   border: 1px dashed var(--gray-300) !important;
   opacity: 0.5;
@@ -323,44 +327,6 @@ body,
   position: relative;
 } */
 
-.pro-bg-con {
-  width: 50%;
-  position: absolute;
-  top: 50%;
-  right: 3rem;
-  transform: translate(0, -50%);
-}
-
-.dog-img {
-  width: 100px;
-}
-
-.mo-item,
-.pc-item {
-  position: relative;
-}
-.pc-item::after {
-  content: "";
-  border: 5px solid #d2d2d2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-}
-
-.mo-item::after {
-  content: "";
-  border: 4px solid #d2d2d2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-}
-
 /* about */
 .cards {
   position: relative;
@@ -394,7 +360,6 @@ body,
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-
 /* projects pro01 */
 .pro-info {
   position: relative;
@@ -405,9 +370,130 @@ body,
   position: absolute;
   top: 50%;
   left: 0%;
-  transform: translate(0%,-50%);
+  transform: translate(0%, -50%);
   width: 20px;
   height: 1px;
   background: var(--gray-300);
   opacity: 0.5;
+}
+
+/* projects design sys button */
+.pro01-btn {
+  background: #876e5c;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px 8px 20px;
+}
+
+.pro01-btn.hover {
+  color: #fff;
+  background: #ac927f;
+  box-shadow: 5px 5px 8px 0 #00000026;
+}
+
+.pro01-02-btn {
+  background: #fff;
+  border-radius: 50px;
+  color: #222;
+  font-size: 16px;
+  padding: 10px 20px 8px 20px;
+}
+
+.pro01-02-btn.hover {
+  background: #fbf7ec;
+  box-shadow: 0 0 20px 0 #fbf7ec80;
+  color: #5f4736;
+  font-weight: 700;
+}
+
+.pro02-btn {
+  background: #fff;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 18px;
+  padding: 20px 52px 18px 52px;
+  width: 250px;
+  color: #0c0d0f;
+  font-weight: 700;
+}
+
+.pro02-btn.hover {
+  background: linear-gradient(90deg, #0cd680, #0cd6c5);
+  color: #fff;
+}
+
+/* projects design sys input*/
+.pro01-input {
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  border-radius: 20px;
+  font-family: Roboto, Noto Sans KR, sans-serif;
+  padding: 20px;
+  color: #c1c1c1;
+}
+.pro01-input.focus {
+  outline: 1px solid #b8a89d;
+}
+
+.pro-bg-con {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  transform: translate(0, -50%);
+}
+
+.dog-img {
+  width: 100px;
+}
+
+.mo-item,
+.pc-item,
+.mo-item-dark,
+.pc-item-dark {
+  position: relative;
+}
+.pc-item::after {
+  content: "";
+  border: 6px solid #d2d2d2;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-radius: 1.2rem;
+}
+
+.mo-item::after {
+  content: "";
+  border: 6px solid #d2d2d2;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-radius: 1rem;
+}
+
+.pc-item-dark::after {
+  content: "";
+  border: 6px solid #454545;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-radius: 1.2rem;
+}
+
+.mo-item-dark::after {
+  content: "";
+  border: 6px solid #454545;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-radius: 1rem;
 }
