@@ -423,6 +423,29 @@ body,
   color: #fff;
 }
 
+.pro03-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #323030;
+  color: #fff;
+}
+
+.pro03-btn.hover {
+  background: #4a4a4a;
+}
+
+.pro03-02-btn {
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 20px;
+  background: #bf1e2e;
+}
+
+.pro03-02-btn.hover {
+  background: #961723;
+}
+
 /* projects design sys input*/
 .pro01-input {
   width: 100%;
