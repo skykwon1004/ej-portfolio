@@ -132,7 +132,8 @@ body,
 } */
 
 body {
-  overflow-x: hidden;
+  min-width: 1440px;
+  width: 100%;
 }
 
 /* h2 span {
