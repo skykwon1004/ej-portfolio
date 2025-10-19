@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>권은진 포트폴리오</title>
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="min-h-screen bg-white w-full">
+    <div class="min-h-screen bg-white flex">
+      <!-- 사이드바 -->
+      <div class="sticky h-screen top-0 w-80 flex flex-col px-5 py-14 border-r-gray-100">
+        <!-- 프로필 섹션 -->
+        <div class="text-center pb-12 border-b-gray-100">
+          <div class="w-48 h-48 rounded-lg mx-auto mb-4" style="background-image: url('img/profile01.png'); background-size: cover; background-position: top"></div>
+          <h1 class="text-2xl font-bold mb-2">권은진</h1>
+          <p class="text-sm font-gray-300 font-light">
+            이커머스 경력 6년차
+            <br />
+            웹디자인 & 퍼블리셔 입니다.
+          </p>
+        </div>
+
+        <!-- 네비게이션 -->
+        <div class="self-stretch px-5 inline-flex flex-col justify-center items-start gap-10">
+          <nav class="py-12 w-full">
+            <a href="/" class="nav-link block mb-5 px-5 py-3 active">
+              <div class="flex items-center gap-3 text-lg">
+                <!-- active -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                  <path
+                    d="M2.5 10.5L4.16667 8.83333M4.16667 8.83333L10 3L15.8333 8.83333M4.16667 8.83333V17.1667C4.16667 17.3877 4.25446 17.5996 4.41074 17.7559C4.56702 17.9122 4.77899 18 5 18H7.5M15.8333 8.83333L17.5 10.5M15.8333 8.83333V17.1667C15.8333 17.3877 15.7455 17.5996 15.5893 17.7559C15.433 17.9122 15.221 18 15 18H12.5M7.5 18C7.72101 18 7.93298 17.9122 8.08926 17.7559C8.24554 17.5996 8.33333 17.3877 8.33333 17.1667V13.8333C8.33333 13.6123 8.42113 13.4004 8.57741 13.2441C8.73369 13.0878 8.94565 13 9.16667 13H10.8333C11.0543 13 11.2663 13.0878 11.4226 13.2441C11.5789 13.4004 11.6667 13.6123 11.6667 13.8333V17.1667C11.6667 17.3877 11.7545 17.5996 11.9107 17.7559C12.067 17.9122 12.279 18 12.5 18M7.5 18H12.5"
+                    stroke="#111111"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Home
+              </div>
+            </a>
+
+            <a href="about.html" class="nav-link group block mb-5 px-5 py-3 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+              <div class="flex items-center gap-3 text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none" class="stroke-[#999] group-hover:stroke-[#111]">
+                  <path
+                    d="M13.3333 6.33333C13.3333 7.21739 12.9821 8.06523 12.357 8.69036C11.7319 9.31548 10.884 9.66667 9.99996 9.66667C9.1159 9.66667 8.26806 9.31548 7.64294 8.69036C7.01782 8.06523 6.66663 7.21739 6.66663 6.33333C6.66663 5.44928 7.01782 4.60143 7.64294 3.97631C8.26806 3.35119 9.1159 3 9.99996 3C10.884 3 11.7319 3.35119 12.357 3.97631C12.9821 4.60143 13.3333 5.44928 13.3333 6.33333ZM9.99996 12.1667C8.45286 12.1667 6.96913 12.7812 5.87517 13.8752C4.78121 14.9692 4.16663 16.4529 4.16663 18H15.8333C15.8333 16.4529 15.2187 14.9692 14.1247 13.8752C13.0308 12.7812 11.5471 12.1667 9.99996 12.1667Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                About
+              </div>
+            </a>
+
+            <a href="projects.html" class="nav-link group block mb-5 px-5 py-3 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+              <div class="flex items-center gap-3 text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none" class="stroke-[#999] group-hover:stroke-[#111]">
+                  <path
+                    d="M2.5 6.33334V14.6667C2.5 15.1087 2.67559 15.5326 2.98816 15.8452C3.30072 16.1577 3.72464 16.3333 4.16667 16.3333H15.8333C16.2754 16.3333 16.6993 16.1577 17.0118 15.8452C17.3244 15.5326 17.5 15.1087 17.5 14.6667V8.00001C17.5 7.55798 17.3244 7.13405 17.0118 6.82149C16.6993 6.50893 16.2754 6.33334 15.8333 6.33334H10.8333L9.16667 4.66667H4.16667C3.72464 4.66667 3.30072 4.84227 2.98816 5.15483C2.67559 5.46739 2.5 5.89131 2.5 6.33334Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Projects
+              </div>
+            </a>
+
+            <a href="contact.html" class="nav-link group block mb-5 px-5 py-3 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+              <div class="flex items-center gap-3 text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none" class="stroke-[#999] group-hover:stroke-[#111]">
+                  <path
+                    d="M1.5 2.66667C1.5 2.22464 1.67559 1.80072 1.98816 1.48816C2.30072 1.17559 2.72464 1 3.16667 1H5.9C6.07483 1.00013 6.24519 1.05525 6.38696 1.15754C6.52874 1.25984 6.63475 1.40413 6.69 1.57L7.93833 5.31417C8.00158 5.50445 7.9941 5.71116 7.91726 5.89637C7.84042 6.08158 7.69938 6.23288 7.52 6.3225L5.63917 7.26417C6.5611 9.30461 8.19538 10.9389 10.2358 11.8608L11.1775 9.98C11.2671 9.80062 11.4184 9.65958 11.6036 9.58274C11.7888 9.5059 11.9956 9.49841 12.1858 9.56167L15.93 10.81C16.096 10.8653 16.2404 10.9714 16.3427 11.1134C16.445 11.2553 16.5 11.4259 16.5 11.6008V14.3333C16.5 14.7754 16.3244 15.1993 16.0118 15.5118C15.6993 15.8244 15.2754 16 14.8333 16H14C7.09667 16 1.5 10.4033 1.5 3.5V2.66667Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Contact
+              </div>
+            </a>
+          </nav>
+        </div>
+
+        <!-- 연락처 -->
+        <div class="self-stretch px-5 inline-flex flex-col justify-start items-start gap-[5px] text-sm font-light font-gray-300 hidden">
+          <!-- <div class="text-sm font-light font-gray-300 px-5"> -->
+          <p>+82 10-2066-2397</p>
+          <p>skykwon1004@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- 메인 컨텐츠 -->
+      <div class="flex-1 px-12 pt-24">
+        <!-- 인트로 섹션 -->
+        <section class="pb-20 border-b-gray-100">
+          <div class="mb-20">
+            <h2 class="hero-title text-8xl mb-8">
+              <span class="block overflow-hidden">
+                <span class=" inline-block intro-text">Essential+</span>
+              </span>
+              <span class="block overflow-hidden">
+                <span class=" inline-block animation-delay-200 intro-text">Meaningful</span>
+              </span>
+            </h2>
+            <p class="text-lg font-light font-gray-300">
+              <!-- 간결함 속에서 브랜드의 본질과 메시지를 강조하는 디자인을 만듭니다. -->
+
+              안녕하세요, 권은진입니다.
+              <br />
+              저는 간결하고 직관적인 디자인으로 브랜드와 사용자를 연결합니다.
+              <br />
+              그 과정에서 브랜드의 본질이 선명히 드러나도록 디자인합니다.
+            </p>
+          </div>
+
+          <a href="about.html" class="inline-flex items-center gap-3 px-8 py-3 rounded-lg bg-black text-white group">
+            <span>More About Me</span>
+            <svg class="w-3 h-3 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 12 10" fill="none">
+              <path d="M7 1l4 4-4 4M1 5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </section>
+
+        <!-- 프로젝트 섹션 -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <h3 class="text-4xl font-bold mb-8">Projects</h3>
+
+          <div class="grid grid-cols-3 gap-6 mb-8">
+            <a href="projects/web/pro01.html" class="bg-white overflow-hidden group">
+              <div class="aspect-square overflow-hidden rounded-2xl">
+                <img src="img/prolist-01.png" alt="" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+              </div>
+
+              <div class="px-2 py-5">
+                <p class="font-gray-300 text-sm font-light mb-4">Web Design</p>
+                <h4 class="text-xl font-bold mb-1">PetCare Lab</h4>
+                <div class="text-base font-light">반려동물의 건강 관리 솔루션을 소개하기 위해 제작된 펫케어 브랜드 프로모션 웹사이트</div>
+              </div>
+            </a>
+
+            <a href="projects/web/pro02.html" class="bg-white overflow-hidden group">
+              <div class="aspect-square overflow-hidden rounded-2xl">
+                <img src="img/prolist-02.png" alt="" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+              </div>
+
+              <div class="px-2 py-5">
+                <p class="font-gray-300 text-sm font-light mb-4">Web Design</p>
+                <h4 class="text-xl font-bold mb-1">MBTCs</h4>
+                <div class="text-base font-light">메타버스 기반의 친환경 블록체인 생태계를 홍보하기 위해 제작된 브랜드 프로모션 웹사이트</div>
+              </div>
+            </a>
+
+            <a href="projects/web/pro03.html" class="bg-white overflow-hidden group">
+              <div class="aspect-square overflow-hidden rounded-2xl">
+                <img src="img/prolist-03.png" alt="" class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+              </div>
+
+              <div class="px-2 py-5">
+                <p class="font-gray-300 text-sm font-light mb-4">Web Design</p>
+                <h4 class="text-xl font-bold mb-1">AGMG</h4>
+                <div class="text-base font-light">첨단소재 기업의 기술력과 지속가능한 비전을 시각적으로 전달하기 위해 제작된 기업 웹사이트</div>
+              </div>
+            </a>
+          </div>
+
+          <a href="projects.html" class="inline-flex items-center gap-3 px-8 py-3 rounded-lg bg-black text-white group">
+            <span>See All Projects</span>
+            <svg class="w-3 h-3 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 12 10" fill="none">
+              <path d="M7 1l4 4-4 4M1 5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </section>
+
+        <!-- 클라이언트 섹션 -->
+        <section class="py-20 border-b-gray-100 overflow-hidden relative bg-white" data-aos="fade-up" data-aos-duration="1400">
+          <h3 class="text-4xl font-bold mb-8">참여한 브랜드들</h3>
+
+          <div class="slider-wrapper relative w-full h-28 overflow-hidden">
+            <!-- 왼쪽 흐림 -->
+            <div class="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
+            <!-- 오른쪽 흐림 -->
+            <div class="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>
+
+            <!-- 실제 슬라이더 -->
+            <div class="client-slider absolute left-0 top-0 flex gap-6">
+              <!-- 원본 카드들 -->
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+
+              <!-- 복제본 (무한 루프용) -->
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+              <div
+                class="w-40 h-20 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden"
+              >
+                <div class="w-28 h-12 bg-zinc-300"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Stack 섹션 -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <h3 class="text-4xl font-bold mb-8">Stack</h3>
+          <section class="grid grid-cols-3 gap-8">
+            <!-- 카드 -->
+            <div class="flex items-start gap-6 bg-gray-100 p-8 items-center rounded-xl">
+              <img src="img/stack01.png" alt="Figma" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">Figma</div>
+                <p class="font-gray-500 text-base max-w-xs">웹/앱 UI·UX 설계와 협업 디자인 시스템 구축에 능숙합니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 2 -->
+            <div class="flex items-start gap-6 bg-gray-100 p-8 items-center rounded-xl">
+              <img src="img/stack02.png" alt="Photoshop" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">Adobe Photoshop</div>
+                <p class="font-gray-500 text-base max-w-xs">상세페이지, 배너, 제품 보정까지 다양한 시각 콘텐츠 제작에 활용합니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 3 -->
+            <div class="flex items-start gap-6 bg-gray-100 p-8 items-center rounded-xl">
+              <img src="img/stack03.png" alt="Illustrator" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">Adobe Illustrator</div>
+                <p class="font-gray-500 text-base max-w-xs">로고·아이콘·인쇄물 등 벡터 기반 디자인 작업에 강점이 있습니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 4 -->
+            <div class="flex items-start gap-6 bg-gray-100 p-8 items-center rounded-xl">
+              <img src="img/stack04.png" alt="HTML/CSS" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">HTML / CSS</div>
+                <p class="font-gray-500 text-base max-w-xs">반응형 레이아웃을 구현하며, 웹표준과 접근성을 준수한 퍼블리싱을 합니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 5 -->
+            <div class="flex items-start gap-6 bg-gray-100 p-8 items-center rounded-xl">
+              <img src="img/stack05.png" alt="JavaScript" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">JavaScript & jQuery</div>
+                <p class="font-gray-500 text-base max-w-xs">동적 UI와 인터랙션 구현, DOM 제어 및 이벤트 처리에 능숙합니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 6 -->
+            <div class="flex items-start gap-6 bg-gray-100 p-8 items-center rounded-xl">
+              <img src="img/stack06.png" alt="React" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">React</div>
+                <p class="font-gray-500 text-base max-w-xs">컴포넌트 기반으로 구조적인 UI 퍼블리싱과 협업 경험이 있습니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 7 -->
+            <div class="flex items-start gap-6 bg-gray-100 p-8 items-center rounded-xl">
+              <img src="img/stack07.png" alt="GitHub" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">GitHub</div>
+                <p class="font-gray-500 text-base max-w-xs">버전 관리와 협업 환경에서의 소스 코드 관리 경험이 있습니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 8 -->
+            <div class="flex items-start gap-6 bg-gray-100 p-8 items-center rounded-xl">
+              <img src="img/stack08.png" alt="Notion" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">Notion</div>
+                <p class="font-gray-500 text-base max-w-xs">프로젝트 일정 관리와 디자인 문서화, 협업 커뮤니케이션 도구로 활용합니다.</p>
+              </div>
+            </div>
+
+             <!-- 카드 9 -->
+             <div class="flex items-start gap-6 bg-gray-100 p-8 items-center rounded-xl">
+              <img src="img/stack09.png" alt="Notion" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">카페24</div>
+                <p class="font-gray-500 text-base max-w-xs">프로젝트 일정 관리와 디자인 문서화, 협업 커뮤니케이션 도구로 활용합니다.</p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- FAQ 섹션 -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <div class="flex gap-16">
+            <div class="w-80">
+              <h3 class="text-4xl font-bold leading-tight">궁금해요!?</h3>
+            </div>
+
+            <div class="flex-1 space-y-6">
+              <!-- FAQ Item -->
+              <div class="bg-white rounded-2xl shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] p-8">
+                <div class="flex items-center justify-between faq-header cursor-pointer">
+                  <h4 class="text-xl font-semibold">디자인과 퍼블리싱 중 강점은 어디인가요?</h4>
+                  <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center transition-transform duration-300">
+                    <svg class="w-7 h-7 transform transition-transform duration-300 rotate-45" viewBox="0 0 28 28" fill="none">
+                      <path d="M14 6v16M6 14h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq-content font-gray-300 leading-relaxed mt-6">둘 다 잘함!</div>
+              </div>
+
+              <!-- FAQ Item -->
+              <div class="bg-white rounded-2xl shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] p-8">
+                <div class="flex items-center justify-between faq-header cursor-pointer">
+                  <h4 class="text-xl font-semibold">어떤 프로젝트를 가장 자신있어 하시나요?</h4>
+                  <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center transition-transform duration-300">
+                    <svg class="w-7 h-7 transform transition-transform duration-300" viewBox="0 0 28 28" fill="none">
+                      <path d="M14 6v16M6 14h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq-content font-gray-300 leading-relaxed mt-6 hidden">가장 자신 있는 프로젝트 설명 부분을 여기에 추가하면 됩니다.</div>
+              </div>
+
+              <!-- FAQ Item -->
+              <div class="bg-white rounded-2xl shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] p-8">
+                <div class="flex items-center justify-between faq-header cursor-pointer">
+                  <h4 class="text-xl font-semibold">어떤 프로젝트를 가장 자신있어 하시나요?</h4>
+                  <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center transition-transform duration-300">
+                    <svg class="w-7 h-7 transform transition-transform duration-300" viewBox="0 0 28 28" fill="none">
+                      <path d="M14 6v16M6 14h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq-content font-gray-300 leading-relaxed mt-6 hidden">가장 자신 있는 프로젝트 설명 부분을 여기에 추가하면 됩니다.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 푸터 -->
+        <footer class="p-12">
+          <p class="font-gray-300 font-light">© 2025 All rights reserved.</p>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button
+          id="scrollTopBtn"
+          class="fixed bottom-10 right-10 hidden bg-black text-white w-12 h-12 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 flex items-center justify-center"
+          aria-label="Scroll to top"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+        
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelectorAll(".faq-header").forEach((header) => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      const icon = header.querySelector("svg");
+
+      // 토글 컨텐츠
+      content.classList.toggle("hidden");
+
+      // 아이콘 회전 (45도 돌리면 + 가 X처럼 보임)
+      icon.classList.toggle("rotate-45");
+    });
+  });
+</script>
+
+<script>
+  AOS.init();
+</script>
+
+<!-- Scroll to Top Button -->
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      scrollBtn.classList.remove("hidden");
+      scrollBtn.classList.add("flex");
+    } else {
+      scrollBtn.classList.add("hidden");
+      scrollBtn.classList.remove("flex");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+</script>

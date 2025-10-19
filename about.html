@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>권은진 포트폴리오</title>
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="min-h-screen bg-white w-full">
+    <div class="min-h-screen bg-white flex">
+      <!-- 사이드바 -->
+      <div class="sticky h-screen top-0 w-80 flex flex-col px-5 py-14 border-r-gray-100">
+        <!-- 프로필 섹션 -->
+        <div class="text-center pb-12 border-b-gray-100">
+          <div class="w-48 h-48 rounded-lg mx-auto mb-4" style="background-image: url('img/profile01.png'); background-size: cover; background-position: top"></div>
+          <h1 class="text-2xl font-bold mb-2">권은진</h1>
+          <p class="text-sm font-gray-300 font-light">
+            이커머스 경력 6년차
+            <br />
+            웹디자인 & 퍼블리셔 입니다.
+          </p>
+        </div>
+
+        <!-- 네비게이션 -->
+        <div class="self-stretch px-5 inline-flex flex-col justify-center items-start gap-10">
+          <nav class="py-12 w-full">
+            <a href="index.html" class="nav-link group block mb-5 px-5 py-3 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+              <div class="flex items-center gap-3 text-lg">
+                <!-- active -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none" class="stroke-[#999] group-hover:stroke-[#111]">
+                  <path
+                    d="M2.5 10.5L4.16667 8.83333M4.16667 8.83333L10 3L15.8333 8.83333M4.16667 8.83333V17.1667C4.16667 17.3877 4.25446 17.5996 4.41074 17.7559C4.56702 17.9122 4.77899 18 5 18H7.5M15.8333 8.83333L17.5 10.5M15.8333 8.83333V17.1667C15.8333 17.3877 15.7455 17.5996 15.5893 17.7559C15.433 17.9122 15.221 18 15 18H12.5M7.5 18C7.72101 18 7.93298 17.9122 8.08926 17.7559C8.24554 17.5996 8.33333 17.3877 8.33333 17.1667V13.8333C8.33333 13.6123 8.42113 13.4004 8.57741 13.2441C8.73369 13.0878 8.94565 13 9.16667 13H10.8333C11.0543 13 11.2663 13.0878 11.4226 13.2441C11.5789 13.4004 11.6667 13.6123 11.6667 13.8333V17.1667C11.6667 17.3877 11.7545 17.5996 11.9107 17.7559C12.067 17.9122 12.279 18 12.5 18M7.5 18H12.5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Home
+              </div>
+            </a>
+
+            <a href="about.html" class="nav-link active block mb-5 px-5 py-3">
+              <div class="flex items-center gap-3 text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                  <path
+                    d="M13.3333 6.33333C13.3333 7.21739 12.9821 8.06523 12.357 8.69036C11.7319 9.31548 10.884 9.66667 9.99996 9.66667C9.1159 9.66667 8.26806 9.31548 7.64294 8.69036C7.01782 8.06523 6.66663 7.21739 6.66663 6.33333C6.66663 5.44928 7.01782 4.60143 7.64294 3.97631C8.26806 3.35119 9.1159 3 9.99996 3C10.884 3 11.7319 3.35119 12.357 3.97631C12.9821 4.60143 13.3333 5.44928 13.3333 6.33333ZM9.99996 12.1667C8.45286 12.1667 6.96913 12.7812 5.87517 13.8752C4.78121 14.9692 4.16663 16.4529 4.16663 18H15.8333C15.8333 16.4529 15.2187 14.9692 14.1247 13.8752C13.0308 12.7812 11.5471 12.1667 9.99996 12.1667Z"
+                    stroke="#111"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                About
+              </div>
+            </a>
+
+            <a href="projects.html" class="nav-link group block mb-5 px-5 py-3 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+              <div class="flex items-center gap-3 text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none" class="stroke-[#999] group-hover:stroke-[#111]">
+                  <path
+                    d="M2.5 6.33334V14.6667C2.5 15.1087 2.67559 15.5326 2.98816 15.8452C3.30072 16.1577 3.72464 16.3333 4.16667 16.3333H15.8333C16.2754 16.3333 16.6993 16.1577 17.0118 15.8452C17.3244 15.5326 17.5 15.1087 17.5 14.6667V8.00001C17.5 7.55798 17.3244 7.13405 17.0118 6.82149C16.6993 6.50893 16.2754 6.33334 15.8333 6.33334H10.8333L9.16667 4.66667H4.16667C3.72464 4.66667 3.30072 4.84227 2.98816 5.15483C2.67559 5.46739 2.5 5.89131 2.5 6.33334Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Projects
+              </div>
+            </a>
+
+            <a href="contact.html" class="nav-link group block mb-5 px-5 py-3 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+              <div class="flex items-center gap-3 text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none" class="stroke-[#999] group-hover:stroke-[#111]">
+                  <path
+                    d="M1.5 2.66667C1.5 2.22464 1.67559 1.80072 1.98816 1.48816C2.30072 1.17559 2.72464 1 3.16667 1H5.9C6.07483 1.00013 6.24519 1.05525 6.38696 1.15754C6.52874 1.25984 6.63475 1.40413 6.69 1.57L7.93833 5.31417C8.00158 5.50445 7.9941 5.71116 7.91726 5.89637C7.84042 6.08158 7.69938 6.23288 7.52 6.3225L5.63917 7.26417C6.5611 9.30461 8.19538 10.9389 10.2358 11.8608L11.1775 9.98C11.2671 9.80062 11.4184 9.65958 11.6036 9.58274C11.7888 9.5059 11.9956 9.49841 12.1858 9.56167L15.93 10.81C16.096 10.8653 16.2404 10.9714 16.3427 11.1134C16.445 11.2553 16.5 11.4259 16.5 11.6008V14.3333C16.5 14.7754 16.3244 15.1993 16.0118 15.5118C15.6993 15.8244 15.2754 16 14.8333 16H14C7.09667 16 1.5 10.4033 1.5 3.5V2.66667Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Contact
+              </div>
+            </a>
+          </nav>
+        </div>
+
+        <!-- 연락처 -->
+        <div class="self-stretch px-5 inline-flex flex-col justify-start items-start gap-[5px]text-sm font-light font-gray-300">
+          <!-- <div class="text-sm font-light font-gray-300 px-5"> -->
+          <p>+82 10-2066-2397</p>
+          <p>skykwon1004@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- 메인 컨텐츠 -->
+      <div class="flex-1 px-12 pt-24">
+        <!-- 인트로 섹션 -->
+        <section class="pb-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <!-- 작은 뱃지 -->
+          <div class="inline-flex items-center gap-2 bg-green-100 text-green-700 rounded-md px-3 py-1 text-sm font-medium mb-6">
+            <!-- <div class="w-3 h-3 bg-green-500 rounded-full"></div> -->
+            <!-- Design + Publishing -->
+            E-commerce Specialist🏅
+          </div>
+          <div class="flex gap-14 items-stretch">
+            <!-- ✅ 여기서 items-stretch 추가 -->
+
+            <!-- 왼쪽 텍스트 -->
+            <div class="flex-1">
+              <h2 class="hero-title text-4xl font-bold mb-6">
+                이커머스 경력 6년차
+                <br />
+                웹 디자이너 권은진 입니다!
+              </h2>
+              <!-- <p class="text-lg font-light text-gray-500 break-words">
+                저는 2018년부터 이커머스 웹디자인과 퍼블리싱을 경험하며 상세페이지·배너 디자인부터 자사몰 구축까지 전 과정을 맡아왔습니다. 농심, 아모레퍼시픽, 하이트진로 등 대형 브랜드 협업을 통해
+                브랜드 아이덴티티를 지키는 안정적인 구현 역량을 쌓았습니다. 지금은 ‘어떻게 보여줄지’에 집중하며 본질에 충실한 디자인을 지향합니다.
+              </p> -->
+              <p class="text-lg font-light text-gray-500 break-words">
+                저는 2018년부터 이커머스 분야에서 웹디자인과 퍼블리싱을 병행하며 쇼핑몰 운영과 브랜드 사이트 구축 경험을 쌓아온 디자이너입니다. 명품 편집숍 ‘탑스타’에서 상세페이지·배너·프로모션
+                디자인과 상품 촬영·보정을 수행하며 기초 체력을 다졌습니다.
+                <br />
+                <br />
+                이후 ‘에이아이댑스’에서 반응형 웹사이트 신규 구축 5건, 운영·유지보수 10건 이상을 담당하며 UX 중심 퍼블리싱을 경험했습니다.
+                <br />
+                <br />
+                최근 ‘리더마인’에서는 농심몰, 아모레퍼시픽 아윤채몰, 하이트진로 진로토닉몰, 닥터포헤어 등 대형 브랜드 퍼블리싱을 맡았습니다. 디자인팀·기획팀·개발팀과 협업하며 브랜드 아이덴티티를
+                유지했고, 퍼블리싱 경험을 통해 구조적이고 논리적인 시각을 갖추게 되었습니다. 지금은 ‘어떻게 구현할지’보다 ‘어떻게 보여줄지’에 집중하며 본질에 충실한 디자인을 지향하고 있습니다.
+              </p>
+            </div>
+
+            <!-- 오른쪽 이미지 -->
+            <div class="flex-1">
+              <img src="img/aboutme.png" alt="About me" class="w-full h-full object-cover rounded-xl" />
+            </div>
+          </div>
+        </section>
+
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <!-- <h3 class="text-4xl font-bold mb-8">Key Strengths</h3> -->
+
+          <div class="flex gap-10">
+            <div class="flex-1">
+              <h3 class="text-4xl font-bold mb-8">Key Strengths</h3>
+
+              <div class="text-lg font-gray-300">
+                브랜드 아이덴티티를 담은 웹디자인과 퍼블리싱,
+                <br />
+                대형 브랜드 협업 경험을 가진 실무형 디자이너 입니다.
+              </div>
+            </div>
+
+            <div class="cards flex flex-col gap-10 flex-1">
+              <div class="card flex gap-6">
+                <div class="text-2xl font-semibold font-gray-300">01</div>
+                <div class="text-2xl font-bold flex flex-col gap-6">
+                  <div>이커머스 특화 경험 🛒</div>
+                  <p class="text-lg font-light font-gray-300">
+                    카페24·샵바이 기반 쇼핑몰 신규 구축·운영 경험
+                    <br />
+                    기획전, 이벤트 페이지 제작 및 유지보수 담당
+                  </p>
+                </div>
+              </div>
+
+              <div class="card flex gap-6">
+                <div class="text-2xl font-semibold font-gray-300">02</div>
+                <div class="text-2xl font-bold flex flex-col gap-6">
+                  <div>실전 디자인 🎨</div>
+                  <p class="text-lg font-light font-gray-300">
+                    상세페이지 보정 2000건+, 배너·썸네일 300건+ 제작 경험
+                    <br />
+                    상품 촬영 및 보정 경험으로 브랜드 쇼핑몰 일관성 강화
+                  </p>
+                </div>
+              </div>
+
+              <div class="card flex gap-6">
+                <div class="text-2xl font-semibold font-gray-300">03</div>
+                <div class="text-2xl font-bold flex flex-col gap-6">
+                  <div>개발 친화적 디자인 💻</div>
+                  <p class="text-lg font-light font-gray-300">
+                    퍼블리싱과 프론트엔드 경험을 통해 개발 프로세스를 이해하고,
+                    <br />
+                    협업 시 개발자가 효율적으로 구현할 수 있는 디자인 설계 역량 보유
+                  </p>
+                </div>
+              </div>
+
+              <div class="card flex gap-6">
+                <div class="text-2xl font-semibold font-gray-300">04</div>
+                <div class="text-2xl font-bold flex flex-col gap-6">
+                  <div>대형 브랜드 협업 🤝</div>
+                  <p class="text-lg font-light font-gray-300">
+                    농심, 아모레퍼시픽, 하이트진로, 닥터포헤어 등 참여
+                    <br />
+                    디자인·기획·개발팀과 협업하며 브랜드 아이덴티티 유지
+                  </p>
+                </div>
+              </div>
+
+              <div class="card flex gap-6">
+                <div class="text-2xl font-semibold font-gray-300">05</div>
+                <div class="text-2xl font-bold flex flex-col gap-6">
+                  <div>협업 역량 🗣️</div>
+                  <p class="text-lg font-light font-gray-300">
+                    프로젝트 일정과 품질 균형을 고려한 커뮤니케이션 경험
+                    <br />
+                    부서 간 조율과 협업으로 안정적인 결과물 도출
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience 섹션 -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <h3 class="text-4xl font-bold mb-8">Experience</h3>
+
+          <div class="self-stretch inline-flex flex-col justify-start items-start gap-16 w-full">
+            <!-- 리스트01 -->
+            <div class="self-stretch inline-flex justify-start items-start gap-7 w-full">
+              <!-- 날짜 -->
+              <div class="justify-center text-lg whitespace-nowrap">2024.04 ~ 2025.03 (1년)</div>
+
+              <!-- 점선 -->
+              <div class="flex-1 flex items-center h-6 max-w-xs">
+                <div class="w-full border-t border-dashed border-gray-300-das opacity-70"></div>
+              </div>
+
+              <!-- 오른쪽 내용 -->
+              <div class="flex-1 flex flex-col justify-start items-start gap-5">
+                <div class="flex flex-col justify-start items-start gap-1">
+                  <div class="text-xl font-semibold">리더마인 (에이전시)</div>
+                  <div class="text-sm font-normal font-gray-300">퍼블리셔, 프론트엔드</div>
+                </div>
+                <div class="flex flex-col justify-start items-start gap-2.5">
+                  <div>카페24, 샵바이 기반 쇼핑몰 구축 및 유지보수</div>
+                  <div>대형 클라이언트 쇼핑몰 유지보수 (농심몰, 아모레퍼시픽, 화이트진로 등)</div>
+                  <div>월별 프로모션 및 이벤트 페이지 제작 및 유지보수</div>
+                  <div>관리자 페이지(BO) UI 퍼블리싱 및 운영 지원</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 리스트02 -->
+            <div class="self-stretch inline-flex justify-start items-start gap-7 w-full">
+              <!-- 날짜 -->
+              <div class="justify-center text-lg whitespace-nowrap">2023.04 ~ 2023.12 (1년)</div>
+
+              <!-- 점선 -->
+              <div class="flex-1 flex items-center h-6 max-w-xs">
+                <div class="w-full border-t border-dashed border-gray-300-das opacity-70"></div>
+              </div>
+
+              <!-- 오른쪽 내용 -->
+              <div class="flex-1 flex flex-col justify-start items-start gap-5">
+                <div class="flex flex-col justify-start items-start gap-1">
+                  <div class="text-xl font-semibold">에이아이댑스 (인하우스)</div>
+                  <div class="text-sm font-normal font-gray-300">퍼블리셔, 웹디자이너</div>
+                </div>
+                <div class="flex flex-col justify-start items-start gap-2.5">
+                  <div>반응형 플랫폼 웹사이트 퍼블리싱 구축 (총 5건)</div>
+                  <div>플랫폼 사이트 운영 및 유지보수 (10건 이상)</div>
+                  <div>블로그 및 SNS 콘텐츠 디자인·업데이트 관리</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 리스트03 -->
+            <div class="self-stretch inline-flex justify-start items-start gap-7 w-full">
+              <!-- 날짜 -->
+              <div class="justify-center text-lg whitespace-nowrap">2018.06 ~ 2021.06 (3년)</div>
+
+              <!-- 점선 -->
+              <div class="flex-1 flex items-center h-6 max-w-xs">
+                <div class="w-full border-t border-dashed border-gray-300-das opacity-70"></div>
+              </div>
+
+              <!-- 오른쪽 내용 -->
+              <div class="flex-1 flex flex-col justify-start items-start gap-5">
+                <div class="flex flex-col justify-start items-start gap-1">
+                  <div class="text-xl font-semibold">탑스타 (자사몰 운영)</div>
+                  <div class="text-sm font-normal font-gray-300">웹디자이너</div>
+                </div>
+                <div class="flex flex-col justify-start items-start gap-2.5">
+                  <div>카페24 기반 자사몰 디자인 유지보수 및 퍼블리싱</div>
+                  <div>쇼핑몰 리뉴얼 기획 및 퍼블리싱</div>
+                  <div>상세페이지, 프로모션, 기획전 썸네일 디자인</div>
+                  <div>상품 촬영 및 이미지 보정</div>
+                  <div>자사몰/종합몰 상품 등록 및 진열 관리</div>
+                  <div>쇼핑몰 기획전 관리 및 콘텐츠 운영</div>
+                  <div>블로그 및 SNS 콘텐츠 디자인·업데이트 관리</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Stack 섹션 -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <h3 class="text-4xl font-bold mb-8">Stack</h3>
+          <!-- <p class="text-lg font-light break-words mb-12">
+            I build with intention. Framer for fast, interactive web design. Figma for clean interfaces. Notion and X for content. Each tool supports how I think, design.
+          </p> -->
+
+          <section class="grid grid-cols-2 gap-12">
+            <!-- 카드 1 -->
+            <div class="flex items-start gap-6">
+              <img src="img/stack01.png" alt="Figma" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">Figma</div>
+                <p class="font-gray-500 text-base max-w-xs">웹/앱 UI·UX 설계와 협업 디자인 시스템 구축에 능숙합니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 2 -->
+            <div class="flex items-start gap-6">
+              <img src="img/stack02.png" alt="Photoshop" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">Adobe Photoshop</div>
+                <p class="font-gray-500 text-base max-w-xs">상세페이지, 배너, 제품 보정까지 다양한 시각 콘텐츠 제작에 활용합니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 3 -->
+            <div class="flex items-start gap-6">
+              <img src="img/stack03.png" alt="Illustrator" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">Adobe Illustrator</div>
+                <p class="font-gray-500 text-base max-w-xs">로고·아이콘·인쇄물 등 벡터 기반 디자인 작업에 강점이 있습니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 4 -->
+            <div class="flex items-start gap-6">
+              <img src="img/stack04.png" alt="HTML/CSS" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">HTML / CSS</div>
+                <p class="font-gray-500 text-base max-w-xs">반응형 레이아웃을 구현하며, 웹표준과 접근성을 준수한 퍼블리싱을 합니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 5 -->
+            <div class="flex items-start gap-6">
+              <img src="img/stack05.png" alt="JavaScript" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">JavaScript & jQuery</div>
+                <p class="font-gray-500 text-base max-w-xs">동적 UI와 인터랙션 구현, DOM 제어 및 이벤트 처리에 능숙합니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 6 -->
+            <div class="flex items-start gap-6">
+              <img src="img/stack06.png" alt="React" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">React</div>
+                <p class="font-gray-500 text-base max-w-xs">컴포넌트 기반으로 구조적인 UI 퍼블리싱과 협업 경험이 있습니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 7 -->
+            <div class="flex items-start gap-6">
+              <img src="img/stack07.png" alt="GitHub" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">GitHub</div>
+                <p class="font-gray-500 text-base max-w-xs">버전 관리와 협업 환경에서의 소스 코드 관리 경험이 있습니다.</p>
+              </div>
+            </div>
+
+            <!-- 카드 8 -->
+            <div class="flex items-start gap-6">
+              <img src="img/stack08.png" alt="Notion" class="w-12 h-12 rounded-lg" />
+              <div>
+                <div class="font-semibold mb-2.5">Notion</div>
+                <p class="font-gray-500 text-base max-w-xs">프로젝트 일정 관리와 디자인 문서화, 협업 커뮤니케이션 도구로 활용합니다.</p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Education 섹션 -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <h3 class="text-4xl font-bold mb-8">Education</h3>
+
+          <div class="self-stretch inline-flex flex-col justify-start items-start gap-16 w-full">
+            <!-- 리스트01 -->
+            <div class="self-stretch inline-flex justify-start items-start gap-7 w-full">
+              <!-- 날짜 -->
+              <div class="justify-center text-lg whitespace-nowrap">2022.11 ~ 2023.04</div>
+
+              <!-- 점선 -->
+              <div class="flex-1 flex items-center h-6 max-w-xs">
+                <div class="w-full border-t border-dashed border-gray-300-das opacity-70"></div>
+              </div>
+
+              <!-- 오른쪽 내용 -->
+              <div class="flex-1 flex flex-col justify-start items-start gap-5">
+                <div class="flex flex-col justify-start items-start gap-1">
+                  <div class="text-xl font-semibold">리액트(React) 활용 프론트엔드 양성과정</div>
+                  <div class="text-sm font-normal font-gray-300">그린컴퓨터아카데미</div>
+                </div>
+                <div class="flex flex-col justify-start items-start gap-2.5">
+                  <div>JavaScript, React 등 학습</div>
+                  <div>React 컴포넌트 개념, 상태 및 props 활용법, 그리고 React Hook을 학습</div>
+                  <div>Axios 또는 Fetch API를 사용한 API 통신 및 데이터 처리 학습</div>
+                  <div>상태 관리를 위한 Redux와 Context를 학습</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 리스트02 -->
+            <div class="self-stretch inline-flex justify-start items-start gap-7 w-full">
+              <!-- 날짜 -->
+              <div class="justify-center text-lg whitespace-nowrap">2017.12 ~ 2018.04</div>
+
+              <!-- 점선 -->
+              <div class="flex-1 flex items-center h-6 max-w-xs">
+                <div class="w-full border-t border-dashed border-gray-300-das opacity-70"></div>
+              </div>
+
+              <!-- 오른쪽 내용 -->
+              <div class="flex-1 flex flex-col justify-start items-start gap-5">
+                <div class="flex flex-col justify-start items-start gap-1">
+                  <div class="text-xl font-semibold">반응형 UI/UX 웹디자인 & 웹퍼블리셔 웹콘텐츠 개발자 양성과정</div>
+                  <div class="text-sm font-normal font-gray-300">그린컴퓨터아카데미</div>
+                </div>
+                <div class="flex flex-col justify-start items-start gap-2.5">
+                  <div>색채학, 타이포그래피, 레이아웃 구성, 웹 접근성/웹 표준에 대한 이해</div>
+                  <div>포토샵, 일러스트레이터를 활용한 웹 이미지 편집 학습</div>
+                  <div>HTML5/CSS3/JavaScript/JQuery를 활용한 웹 표준 코딩, 웹 페이지 제작 학습</div>
+                  <div>프로토타입 제작, 시안 디자인 개발 학습</div>
+                  <div>반응형 웹 구현 및 포트폴리오 제작 실습</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 리스트03 -->
+            <div class="self-stretch inline-flex justify-start items-start gap-7 w-full">
+              <!-- 날짜 -->
+              <div class="justify-center text-lg whitespace-nowrap">2008.03 ~ 2013.02</div>
+
+              <!-- 점선 -->
+              <div class="flex-1 flex items-center h-6 max-w-xs">
+                <div class="w-full border-t border-dashed border-gray-300-das opacity-70"></div>
+              </div>
+
+              <!-- 오른쪽 내용 -->
+              <div class="flex-1 flex flex-col justify-start items-start gap-5">
+                <div class="flex flex-col justify-start items-start gap-1">
+                  <div class="text-xl font-semibold">의상학과 졸업</div>
+                  <div class="text-sm font-normal font-gray-300">경성대학교 4년제</div>
+                </div>
+                <div class="flex flex-col justify-start items-start gap-2.5">
+                  <div>디자인 감각 및 트렌드 이해</div>
+                  <div>색채 및 디자인 역사의 이해</div>
+                  <div>상품기획(MD), 유통 및 소비자 트렌드 분석 학습</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- contant 링크 섹션 -->
+        <section class="pb-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <div class="p-20 flex items-center justify-between bg-black rounded-2xl gap-16">
+            <div class="text-white text-5xl font-semibold">
+              Contact Me
+              <br />
+              Thank You!
+            </div>
+            <a href="/contact.html" class="inline-flex items-center gap-3 px-8 py-3 rounded-lg group text-white border-white">
+              <span>Get in Touch!</span>
+              <svg class="w-3 h-3 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 12 10" fill="none">
+                <path d="M7 1l4 4-4 4M1 5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <!-- 푸터 -->
+        <footer class="p-12">
+          <p class="font-gray-300 font-light">© 2025 All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  AOS.init();
+</script>
