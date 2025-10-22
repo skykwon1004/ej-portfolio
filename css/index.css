@@ -264,6 +264,12 @@ body,
   margin: 0px auto;
 }
 
+@media (min-width: 1920px) {
+  .sticky {
+    width: 30rem;
+  }
+}
+
 /* intro */
 @keyframes slideUp {
   0% {
