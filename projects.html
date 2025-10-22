@@ -260,6 +260,17 @@
         <footer class="p-12">
           <p class="font-gray-300 font-light">© 2025 All rights reserved.</p>
         </footer>
+
+         <!-- Scroll to Top Button -->
+         <button
+         id="scrollTopBtn"
+         class="fixed bottom-10 right-10 hidden bg-black text-white w-12 h-12 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 flex items-center justify-center"
+         aria-label="Scroll to top"
+       >
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+         </svg>
+       </button>
       </div>
     </div>
   </body>
@@ -294,5 +305,27 @@
           document.getElementById("form-status").innerText = "❌ 메일 발송 실패: " + JSON.stringify(err);
         }
       );
+  });
+</script>
+
+<!-- Scroll to Top Button -->
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      scrollBtn.classList.remove("hidden");
+      scrollBtn.classList.add("flex");
+    } else {
+      scrollBtn.classList.add("hidden");
+      scrollBtn.classList.remove("flex");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
 </script>

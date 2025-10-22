@@ -114,7 +114,8 @@
               <div>
                 <h3 class="text-4xl font-bold mb-8">🤝 함께 이야기해요 :)</h3>
                 <p class="text-lg font-light break-words">
-                  지원 관련 문의나 포트폴리오에 대한 추가 질문이 있다면 편하게 연락 주세요.<br />
+                  지원 관련 문의나 포트폴리오에 대한 추가 질문이 있다면 편하게 연락 주세요.
+                  <br />
                   빠르게 확인하고 성실히 답변드리겠습니다.
                 </p>
               </div>
@@ -149,7 +150,13 @@
             <div class="p-6 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] flex-1">
               <form id="contact-form" class="space-y-4">
                 <input type="text" name="name" placeholder="성함을 알려주세요" class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-0 focus:border-black" required />
-                <input type="email" name="email" placeholder="연락받을 이메일을 적어주세요" class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-0 focus:border-black" required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="연락받을 이메일을 적어주세요"
+                  class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-0 focus:border-black"
+                  required
+                />
                 <textarea
                   name="message"
                   placeholder="하고 싶은 말씀을 자유롭게 남겨주세요"
@@ -169,6 +176,17 @@
         <footer class="p-12">
           <p class="font-gray-300 font-light">© 2025 All rights reserved.</p>
         </footer>
+
+        <!-- Scroll to Top Button -->
+        <button
+          id="scrollTopBtn"
+          class="fixed bottom-10 right-10 hidden bg-black text-white w-12 h-12 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 flex items-center justify-center"
+          aria-label="Scroll to top"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
       </div>
     </div>
   </body>
@@ -203,5 +221,27 @@
           document.getElementById("form-status").innerText = "❌ 메일 발송 실패: " + JSON.stringify(err);
         }
       );
+  });
+</script>
+
+<!-- Scroll to Top Button -->
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      scrollBtn.classList.remove("hidden");
+      scrollBtn.classList.add("flex");
+    } else {
+      scrollBtn.classList.add("hidden");
+      scrollBtn.classList.remove("flex");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
 </script>
