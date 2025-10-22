@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>권은진 포트폴리오</title>
     <link rel="stylesheet" href="css/index.css" />
+    <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body class="min-h-screen bg-white w-full">
     <div class="min-h-screen bg-white flex">
@@ -100,13 +107,16 @@
       <!-- 메인 컨텐츠 -->
       <div class="flex-1 px-12 pt-24">
         <!-- Contact Form -->
-        <section class="py-20 border-b-gray-100">
+        <section class="pb-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
           <h3 class="text-4xl font-bold mb-8">Contact</h3>
           <div class="p-16 flex gap-12 bg-gray-100 rounded-2xl">
             <div class="flex-1 flex flex-col gap-16">
               <div>
-                <h3 class="text-4xl font-bold mb-8">Let's Connect!</h3>
-                <p class="text-lg font-light break-words">Feel free to reach out with your projects, questions, or to connect. I'll respond promptly, and we can explore opportunities together.</p>
+                <h3 class="text-4xl font-bold mb-8">🤝 함께 이야기해요 :)</h3>
+                <p class="text-lg font-light break-words">
+                  지원 관련 문의나 포트폴리오에 대한 추가 질문이 있다면 편하게 연락 주세요.<br />
+                  빠르게 확인하고 성실히 답변드리겠습니다.
+                </p>
               </div>
 
               <div class="flex flex-col gap-2">
@@ -120,7 +130,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  +82 10-2066-2397
+                  010-2066-2397
                 </div>
                 <div class="flex items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -138,11 +148,11 @@
             </div>
             <div class="p-6 bg-white rounded-lg shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] flex-1">
               <form id="contact-form" class="space-y-4">
-                <input type="text" name="name" placeholder="Your Name" class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-0 focus:border-black" required />
-                <input type="email" name="email" placeholder="Your Email" class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-0 focus:border-black" required />
+                <input type="text" name="name" placeholder="성함을 알려주세요" class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-0 focus:border-black" required />
+                <input type="email" name="email" placeholder="연락받을 이메일을 적어주세요" class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-0 focus:border-black" required />
                 <textarea
                   name="message"
-                  placeholder="Write a message..."
+                  placeholder="하고 싶은 말씀을 자유롭게 남겨주세요"
                   class="w-full border border-gray-300 p-3 rounded-md h-32 focus:outline-none focus:ring-0 focus:border-black"
                   required
                 ></textarea>
@@ -165,18 +175,7 @@
 </html>
 
 <script>
-  document.querySelectorAll(".faq-header").forEach((header) => {
-    header.addEventListener("click", () => {
-      const content = header.nextElementSibling;
-      const icon = header.querySelector("svg");
-
-      // 토글 컨텐츠
-      content.classList.toggle("hidden");
-
-      // 아이콘 회전 (45도 돌리면 + 가 X처럼 보임)
-      icon.classList.toggle("rotate-45");
-    });
-  });
+  AOS.init();
 </script>
 
 <!-- EmailJS SDK -->
