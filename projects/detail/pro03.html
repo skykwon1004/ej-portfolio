@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>권은진 포트폴리오</title>
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="150x150" href="/img/favicon.png" />
+  </head>
+  <body class="min-h-screen bg-white w-full">
+    <div class="min-h-screen bg-white flex">
+      <!-- 사이드바 -->
+      <div class="sticky h-screen top-0 w-80 flex flex-col px-5 py-14 border-r-gray-100">
+        <!-- 프로필 섹션 -->
+        <div class="text-center pb-12 border-b-gray-100">
+          <div class="w-48 h-48 rounded-lg mx-auto mb-4" style="background-image: url('/img/profile01.png'); background-size: cover; background-position: top"></div>
+          <h1 class="text-2xl font-bold mb-2">권은진</h1>
+          <p class="text-sm font-gray-300 font-light">
+            이커머스 경력 5년차
+            <br />
+            웹디자인 & 퍼블리셔 입니다.
+          </p>
+        </div>
+
+        <!-- 네비게이션 -->
+        <div class="self-stretch px-5 inline-flex flex-col justify-center items-start gap-10">
+          <nav class="py-12 w-full">
+            <a href="/" class="nav-link group block mb-5 px-5 py-3 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+              <div class="flex items-center gap-3 text-lg">
+                <!-- active -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none" class="stroke-[#999] group-hover:stroke-[#111]">
+                  <path
+                    d="M2.5 10.5L4.16667 8.83333M4.16667 8.83333L10 3L15.8333 8.83333M4.16667 8.83333V17.1667C4.16667 17.3877 4.25446 17.5996 4.41074 17.7559C4.56702 17.9122 4.77899 18 5 18H7.5M15.8333 8.83333L17.5 10.5M15.8333 8.83333V17.1667C15.8333 17.3877 15.7455 17.5996 15.5893 17.7559C15.433 17.9122 15.221 18 15 18H12.5M7.5 18C7.72101 18 7.93298 17.9122 8.08926 17.7559C8.24554 17.5996 8.33333 17.3877 8.33333 17.1667V13.8333C8.33333 13.6123 8.42113 13.4004 8.57741 13.2441C8.73369 13.0878 8.94565 13 9.16667 13H10.8333C11.0543 13 11.2663 13.0878 11.4226 13.2441C11.5789 13.4004 11.6667 13.6123 11.6667 13.8333V17.1667C11.6667 17.3877 11.7545 17.5996 11.9107 17.7559C12.067 17.9122 12.279 18 12.5 18M7.5 18H12.5"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Home
+              </div>
+            </a>
+
+            <a href="/about.html" class="nav-link group block mb-5 px-5 py-3 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+              <div class="flex items-center gap-3 text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none" class="stroke-[#999] group-hover:stroke-[#111]">
+                  <path
+                    d="M13.3333 6.33333C13.3333 7.21739 12.9821 8.06523 12.357 8.69036C11.7319 9.31548 10.884 9.66667 9.99996 9.66667C9.1159 9.66667 8.26806 9.31548 7.64294 8.69036C7.01782 8.06523 6.66663 7.21739 6.66663 6.33333C6.66663 5.44928 7.01782 4.60143 7.64294 3.97631C8.26806 3.35119 9.1159 3 9.99996 3C10.884 3 11.7319 3.35119 12.357 3.97631C12.9821 4.60143 13.3333 5.44928 13.3333 6.33333ZM9.99996 12.1667C8.45286 12.1667 6.96913 12.7812 5.87517 13.8752C4.78121 14.9692 4.16663 16.4529 4.16663 18H15.8333C15.8333 16.4529 15.2187 14.9692 14.1247 13.8752C13.0308 12.7812 11.5471 12.1667 9.99996 12.1667Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                About
+              </div>
+            </a>
+
+            <a href="/projects.html" class="nav-link active block mb-5 px-5 py-3">
+              <div class="flex items-center gap-3 text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                  <path
+                    d="M2.5 6.33334V14.6667C2.5 15.1087 2.67559 15.5326 2.98816 15.8452C3.30072 16.1577 3.72464 16.3333 4.16667 16.3333H15.8333C16.2754 16.3333 16.6993 16.1577 17.0118 15.8452C17.3244 15.5326 17.5 15.1087 17.5 14.6667V8.00001C17.5 7.55798 17.3244 7.13405 17.0118 6.82149C16.6993 6.50893 16.2754 6.33334 15.8333 6.33334H10.8333L9.16667 4.66667H4.16667C3.72464 4.66667 3.30072 4.84227 2.98816 5.15483C2.67559 5.46739 2.5 5.89131 2.5 6.33334Z"
+                    stroke="#111"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Projects
+              </div>
+            </a>
+
+            <a href="/contact.html" class="nav-link group block mb-5 px-5 py-3 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+              <div class="flex items-center gap-3 text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none" class="stroke-[#999] group-hover:stroke-[#111]">
+                  <path
+                    d="M1.5 2.66667C1.5 2.22464 1.67559 1.80072 1.98816 1.48816C2.30072 1.17559 2.72464 1 3.16667 1H5.9C6.07483 1.00013 6.24519 1.05525 6.38696 1.15754C6.52874 1.25984 6.63475 1.40413 6.69 1.57L7.93833 5.31417C8.00158 5.50445 7.9941 5.71116 7.91726 5.89637C7.84042 6.08158 7.69938 6.23288 7.52 6.3225L5.63917 7.26417C6.5611 9.30461 8.19538 10.9389 10.2358 11.8608L11.1775 9.98C11.2671 9.80062 11.4184 9.65958 11.6036 9.58274C11.7888 9.5059 11.9956 9.49841 12.1858 9.56167L15.93 10.81C16.096 10.8653 16.2404 10.9714 16.3427 11.1134C16.445 11.2553 16.5 11.4259 16.5 11.6008V14.3333C16.5 14.7754 16.3244 15.1993 16.0118 15.5118C15.6993 15.8244 15.2754 16 14.8333 16H14C7.09667 16 1.5 10.4033 1.5 3.5V2.66667Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Contact
+              </div>
+            </a>
+          </nav>
+        </div>
+
+        <!-- 연락처 -->
+        <div class="self-stretch px-5 inline-flex flex-col justify-start items-start gap-[5px]text-sm font-light font-gray-300 hidden">
+          <!-- <div class="text-sm font-light font-gray-300 px-5"> -->
+          <p>+82 10-2066-2397</p>
+          <p>skykwon1004@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- 메인 컨텐츠 -->
+      <div class="flex-1 px-12 pt-24">
+        <!-- Projects 섹션 -->
+        <!-- 프로젝트 이름, 기여도 -->
+        <section class="" data-aos="fade-up" data-aos-duration="1400">
+          <div class="flex justify-start items-start gap-12">
+            <div class="self-stretch flex flex-col justify-start items-start flex-1">
+              <h3 class="text-7xl font-bold mb-8">울쎄라피 프라임 상세페이지.</h3>
+
+              <!-- <img src="/img/ttt.png" alt=""> -->
+
+              <div class="flex flex-col gap-2.5 mb-20 w-full">
+                <div class="self-stretch inline-flex justify-between">
+                  <div class="flex flex-col flex-1 self-stretch inline-flex justify-start gap-2.5">
+                    <div class="justify-center font-gray-300 font-light pro-info">기업</div>
+                    <div class="justify-center text-lg font-light">세렌클리닉</div>
+                  </div>
+
+                  <div class="flex flex-col flex-1 self-stretch inline-flex justify-start gap-2.5">
+                    <div class="justify-center font-gray-300 font-light pro-info">작업 기간</div>
+                    <div class="justify-center text-lg font-light">2025.10 (2일)</div>
+                  </div>
+
+                  <div class="flex flex-col flex-1 self-stretch inline-flex justify-start gap-2.5">
+                    <div class="justify-center font-gray-300 font-light pro-info">기여도</div>
+                    <div class="justify-center text-lg font-light">기획, 웹디자인 100%</div>
+                  </div>
+
+                  <div class="flex flex-col flex-1 self-stretch inline-flex justify-start gap-2.5">
+                    <div class="justify-center font-gray-300 font-light pro-info">기술</div>
+                    <div class="justify-center text-lg font-light">Figma, Photoshop</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <a href="https://petcarelab.net/" target="_blank" class="inline-flex items-center gap-3 px-8 py-3 rounded-lg bg-black text-white group">
+                <span>Live Website</span>
+                <svg class="w-3 h-3 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 12 10" fill="none">
+                  <path d="M7 1l4 4-4 4M1 5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a> -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Overview -->
+        <section class="pb-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <div class="self-stretch inline-flex flex-col justify-start items-start gap-8 w-full">
+            <!-- 컨텐츠 -->
+            <div class="w-full h-[750px] bg-[url('/img/pro11-title-bg.png')] bg-no-repeat bg-center bg-cover relative shadow-[10px_10px_10px_0px_rgba(198,198,198,0.50)] rounded-2xl">
+              <div class="bg-white p-14 pro-bg-con rounded-2xl">
+                <div class="flex gap-5">
+                  <div class="text-4xl font-bold mb-6 text-circle">Project Overview</div>
+                  <!-- <div class="w-8">
+                    <img src="/img/pro01-title-item.png" alt="" />
+                  </div> -->
+                </div>
+
+                <div class="text-lg font-gray-300 font-light">
+                  울쎄라피 프라임은 초음파 리프팅 장비로,
+                  <span class="font-bold">정확한 초음파 모니터링을 통해 피부 속 깊은 층까지 에너지를 전달하는 시술용 디바이스</span>
+                  입니다.
+                  <br />
+                  <br />
+                  본 상세페이지는
+                  <span class="font-bold">프리미엄 의료기기의 전문성과 신뢰감</span>
+                  을 강조하고, 환자가 시술 과정을 명확히 이해할 수 있도록
+                  <span class="font-bold">정보 중심의 시각 구조</span>
+                  로 설계되었습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Design Goal -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <div class="self-stretch flex flex-col gap-10">
+            <div class="flex flex-col gap-2.5">
+              <div class="text-4xl font-bold text-circle">Design Goal</div>
+              <div class="text-lg font-gray-300">
+                신뢰감 있는 의료 서비스 브랜드로서,
+                <span class="font-bold">전문성과 고급스러움</span>
+                을 시각적으로 전달하는 것을 목표로 했습니다.
+                <br />
+                컬러는
+                <span class="font-bold">브라운과 골드 톤</span>
+                을 사용해 프리미엄 의료 브랜드의 안정감과 품격을 표현했습니다.
+              </div>
+            </div>
+
+            <div class="bg-[#FBF8F4] grid grid-cols-1 md:grid-cols-4 gap-16 text-center py-24 px-16 rounded-2xl">
+              <div class="flex flex-col items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#D7C7B5] text-2xl">🤎</div>
+                <h3 class="text-xl font-semibold">Premium Tone</h3>
+                <p class="text-sm text-gray-500">브라운·골드 톤으로 안정적이고 고급스러운 브랜드 이미지를 구축했습니다.</p>
+              </div>
+              <div class="flex flex-col items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#D7C7B5] text-2xl">🩺</div>
+                <h3 class="text-xl font-semibold">Trust</h3>
+                <p class="text-sm text-gray-500">객관적이고 신뢰할 수 있는 정보 구조로 의료 브랜드의 전문성을 강화했습니다.</p>
+              </div>
+              <div class="flex flex-col items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#D7C7B5] text-2xl">📊</div>
+                <h3 class="text-xl font-semibold">Clarity</h3>
+                <p class="text-sm text-gray-500">시술 효과와 장점을 명확히 구분해 정보의 전달력을 높였습니다.</p>
+              </div>
+              <div class="flex flex-col items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-[#D7C7B5] text-2xl">✨</div>
+                <h3 class="text-xl font-semibold">Elegance</h3>
+                <p class="text-sm text-gray-500">절제된 그래픽 요소와 균형 잡힌 여백으로 세련된 인상을 완성했습니다.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Concept -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <div class="flex flex-col self-stretch inline-flex justify-start items-start gap-10">
+            <div class="justify-center text-4xl font-bold text-circle">Concept</div>
+            <div class="self-stretch inline-flex justify-start items-start gap-6 flex-1">
+              <!-- 카드 -->
+              <div class="flex-1 bg-white rounded-2xl shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] border border-gray-100 py-10 px-8 flex flex-col gap-2.5">
+                <div class="text-xl font-semibold">정확성 중심</div>
+                <p class="text-lg font-gray-300 font-light">시술 장비의 기능과 과정을 단계적으로 구조화해 정확하고 신뢰감 있는 인상을 주었습니다.</p>
+              </div>
+              <div class="flex-1 bg-white rounded-2xl shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] border border-gray-100 py-10 px-8 flex flex-col gap-2.5">
+                <div class="text-xl font-semibold">전문적 신뢰감</div>
+                <p class="text-lg font-gray-300 font-light">고급스러운 컬러 톤과 여백 중심의 정제된 레이아웃으로 의료 브랜드의 전문성을 강조했습니다.</p>
+              </div>
+              <div class="flex-1 bg-white rounded-2xl shadow-[10px_10px_30px_0px_rgba(0,0,0,0.06)] border border-gray-100 py-10 px-8 flex flex-col gap-2.5">
+                <div class="text-xl font-semibold">가독성 강화</div>
+                <p class="text-lg font-gray-300 font-light">핵심 정보 위주의 명료한 타이포그래피로 시각적 안정감과 이해도를 높였습니다.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- design system -->
+        <section class="py-20 border-b-gray-100 self-stretch flex flex-col justify-start items-start gap-10" data-aos="fade-up" data-aos-duration="1400">
+          <div class="flex flex-col gap-2.5">
+            <div class="justify-center text-4xl font-bold text-circle">Design System</div>
+            <div class="text-lg font-gray-300">브랜드 가이드라인을 기반으로 폰트·컬러·표 구조를 통일하여, 안정적인 쇼핑 경험을 제공합니다.</div>
+          </div>
+
+          <!-- Typography -->
+          <div class="self-stretch inline-flex flex-col justify-start items-start gap-20 w-full bg-[#F8F8F8] py-24 px-16 rounded-2xl">
+            <div class="flex self-stretch inline-flex justify-start items-stretch gap-6">
+              <div class="flex flex-col flex-1 gap-6">
+                <div class="text-xl font-semibold">Typography</div>
+                <div class="flex-1 pt-12 px-10 pb-7 bg-gray-100 flex flex-col justify-center items-center gap-14 w-full bg-white rounded-2xl border-gray-100">
+                  <div class="self-stretch flex flex-col justify-center items-start">
+                    <div class="font-light font-gray-300 text-sm !font-['Pretendard']">한글</div>
+                    <div class="justify-start text-lg font-semibold !font-['Pretendard']">Noto Sans KR</div>
+                    <div class="self-stretch inline-flex justify-between items-center">
+                      <div class="flex-1 justify-start">
+                        <span class="text-5xl font-normal !font-['Pretendard']">가</span>
+                        <span class="text-5xl font-medium !font-['Pretendard']">나</span>
+                        <span class="text-5xl font-bold !font-['Pretendard']">다</span>
+                      </div>
+                      <div class="justify-start font-normal">Regular | Medium | Bold</div>
+                    </div>
+                  </div>
+                  <div class="self-stretch flex flex-col justify-center items-start">
+                    <div class="font-light font-gray-300 text-sm !font-['Pretendard']">숫자</div>
+                    <div class="justify-start text-lg font-semibold !font-['Pretendard']">Scheherazade New</div>
+
+                    <div class="self-stretch inline-flex justify-between items-center">
+                      <div class="justify-start">
+                        <span class="text-5xl font-normal font-scheherazade">1</span>
+                        <span class="text-5xl font-scheherazade">2</span>
+                        <span class="text-5xl font-scheherazade">3</span>
+                      </div>
+                      <div class="justify-start font-normal">Regular</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- color -->
+              <div class="flex flex-col flex-1 gap-6">
+                <div class="text-xl font-semibold">Color</div>
+                <div class="flex-1 flex gap-2.5 w-full">
+                  <div class="self-stretch flex-1 py-10 bg-[#553328] inline-flex justify-center items-end gap-2.5 rounded-2xl">
+                    <div class="flex flex-col gap-2">
+                      <div class="text-white text-sm font-thin">Main Color</div>
+                      <div class="text-white justify-start text-xl font-medium">#553328</div>
+                    </div>
+                  </div>
+                  <div class="self-stretch flex-1 py-10 bg-[#D8D4CC] inline-flex justify-center items-end gap-2.5 rounded-2xl">
+                    <div class="flex flex-col gap-2">
+                      <div class="text-sm font-thin">Sub Color</div>
+                      <div class="justify-start text-xl font-medium">#D8D4CC</div>
+                    </div>
+                  </div>
+                  <div class="self-stretch flex-1 py-10 bg-[#8A6746] inline-flex justify-center items-end gap-2.5 rounded-2xl">
+                    <div class="flex flex-col gap-2">
+                      <div class="text-white text-sm font-thin">Sub Color</div>
+                      <div class="text-white justify-start text-xl font-medium">#8A6746</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Detail Page Design -->
+        <section class="py-20 border-b-gray-100" data-aos="fade-up" data-aos-duration="1400">
+          <div class="self-stretch flex flex-col gap-10">
+            <!-- 타이틀 -->
+            <div class="flex flex-col gap-2.5">
+              <div class="text-4xl font-bold text-circle">Detail Page Design</div>
+              <div class="text-lg font-gray-300">
+                실생활 공간 속에서 자연스럽게 어울리는 제품의 쓰임새를 강조하고,
+                <br />
+                미니멀한 비주얼과 따뜻한 컬러 톤으로 브랜드의 감성을 시각화했습니다.
+              </div>
+            </div>
+
+            <div class="w-full bg-[#F8F8F8] rounded-2xl py-20 px-16 justify-between">
+              <!-- 01, 02, 03 설명 박스 -->
+              <div class="flex gap-12 mb-12">
+                <!-- 01 -->
+                <div class="flex-1">
+                  <div class="text-5xl font-black mb-4">01.</div>
+                  <h4 class="text-2xl font-semibold mb-4">인트로 & 메인 비주얼 섹션</h4>
+                  <p class="text-lg font-gray-300 font-light">
+                    모델 컷과 의료기기를 함께 배치해
+                    <span class="font-bold">‘정제된 전문성과 프리미엄 의료 브랜드의 신뢰감’</span>
+                    을 전달했습니다. 고급스러운 브라운 톤과 미세한 그라데이션 효과를 사용해
+                    <span class="font-bold">클래식하면서도 모던한 인상</span>
+                    을 주었으며, 제품명 타이포그래피에는
+                    <span class="font-bold">견고함과 기술적 정밀함</span>
+                    이 느껴지도록 구성했습니다.
+                  </p>
+                </div>
+
+                <!-- 02 -->
+                <div class="flex-1">
+                  <div class="text-5xl font-black mb-4">02.</div>
+                  <h4 class="text-2xl font-semibold mb-4">시술 원리 & 추천 대상 섹션</h4>
+                  <p class="text-lg font-gray-300 font-light">
+                    울쎄라피 프라임의 핵심 기능인
+                    <span class="font-bold">트랜스듀서 깊이별 초음파 시술 구조</span>
+                    를 시각화해 전문성을 직관적으로 표현했습니다. 기존 장비와의
+                    <span class="font-bold">비교 표와 깊이별 단면 구조</span>
+                    를 통해 정보의 신뢰도를 높였으며, 브랜드의 기술력과 차별성을 강조한
+                    <span class="font-bold">데이터 기반 레이아웃</span>
+                    으로 구성했습니다.
+                  </p>
+                </div>
+
+                <!-- 03 -->
+                <div class="flex-1">
+                  <div class="text-5xl font-black mb-4">03.</div>
+                  <h4 class="text-2xl font-semibold mb-4">시술 과정 & FAQ 섹션</h4>
+                  <p class="text-lg font-gray-300 font-light">
+                    <span class="font-bold">1:1 맞춤 상담부터 시술 후 케어까지의 전 과정</span>
+                    을 단계별로 구성해 전문성과 신뢰감을 강조했습니다. 실제 의료진 중심의 이미지로
+                    <span class="font-bold">‘디자인 상담 → 시술 → 사후 관리’</span>
+                    흐름을 명확히 전달해 환자가 시술 절차를 쉽게 이해할 수 있도록 했습니다.
+                    <br />
+                    <br />
+                    <span class="font-bold">FAQ 섹션</span>
+                    에서는 핵심 질문만 간결하게 정리해 브랜드의 전문성과 신뢰감을 강화했습니다.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 이미지 3개 flex -->
+              <div class="w-full flex justify-between gap-12">
+                <div class="flex-1">
+                  <img src="/img/pro11-01.png" alt="" class="rounded-2xl shadow-[10px_10px_30px_0_rgba(0,0,0,0.06)] w-full" />
+                </div>
+                <div class="flex-1">
+                  <img src="/img/pro11-02.png" alt="" class="rounded-2xl shadow-[10px_10px_30px_0_rgba(0,0,0,0.06)] w-full" />
+                </div>
+                <div class="flex-1">
+                  <img src="/img/pro11-03.png" alt="" class="rounded-2xl shadow-[10px_10px_30px_0_rgba(0,0,0,0.06)] w-full" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 푸터 -->
+        <footer class="p-12">
+          <p class="font-gray-300 font-light">© 2025 All rights reserved.</p>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button
+          id="scrollTopBtn"
+          class="fixed bottom-10 right-10 hidden bg-black text-white w-12 h-12 rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 flex items-center justify-center"
+          aria-label="Scroll to top"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  AOS.init();
+</script>
+
+<!-- Scroll to Top Button -->
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      scrollBtn.classList.remove("hidden");
+      scrollBtn.classList.add("flex");
+    } else {
+      scrollBtn.classList.add("hidden");
+      scrollBtn.classList.remove("flex");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+</script>
